@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery-3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Zen+Old+Mincho:wght@900&display=swap');
+
+        body {
+            font-family: 'Zen Old Mincho', serif;
+
+        }
+
+        .form-group {
+            margin-bottom: 3%;
+        }
+
+        .title {
+            color: red;
+            text-transform: uppercase;
+        }
+        @media only screen and (max-width: 415px) {
+            button#average{
+                margin-bottom: 2%;
+                display: block;
+                text-align: center;
+            }
+            button#classification{
+                margin-bottom: 2%;
+                display: block;
+                text-align: center;
+            }
+       }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center title">Class marksheet</h1>
+
+                <div class="form-group">
+                    <label for="name">Họ và tên :</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="math">Điểm Toán :</label>
+                    <input type="text" id="math" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="physic">Điểm Lý :</label>
+                    <input type="text" id="physic" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="chemistry">Điểm Hóa :</label>
+                    <input type="text" id="chemistry" class="form-control">
+                </div>
+                <button id="nhap" class="btn btn-primary">Nhập</button>
+
+                <table id="table" style="width:100%; margin-top: 5%;" border="1" cellpadding="1" cellspacing="2">
+                    <tr>
+                        <th class="text-center w-10">STT</th>
+                        <th class="text-center w-30">Họ tên</th>
+                        <th class="text-center w-15">Toán</th>
+                        <th class="text-center w-15">Lý</th>
+                        <th class="text-center w-15">Hóa</th>
+                        <th class="text-center w-15">Trung bình</th>
+                    </tr>
+                </table>
+                <br></br>
+                <div class="text-center">
+                    <button id="average" class="btn btn-primary">Tính điểm trung bình</button>
+                    <button id="classification" class="btn btn-primary">Xác định học sinh giỏi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback hell and promise</title>
+</head>
+<body>
+ <script>
+    //  /* promise có tính chất chuỗi    */
+    //  var promise= new Promise(
+    //      //Excutor trả lại 2 tham số đều là hàm số
+         
+    //      function(resole,reject){
+    //        // Logic xử lý
+    //        resole();
+         
+    //  })
+    //  promise
+    //   .then(function(number){
+    //            return new Promise(function(resole){
+    //               setTimeout(resole,3000);
+    //            })
+    //   })
+    //   .then(function(number){
+    //         console.log(number);  
+    //         return 2
+    //   })    
+    //   .then(function(number){
+    //         console.log(number);  
+    //         return 3
+    //   })    
+    //   .catch(function(coure){
+    //          console.log(coure);
+    //   })
+    //   .finally(function(){
+    //       console.log('Done!')
+    //   })
+
+
+    //  /* Cách trả lời phỏng vấn
+    //   Là khái niệm sinh ra để xử lí các thao tác bất đồng bộ ,trước khi
+    //   có promise thì ta có khái niệm callback mà callback lại sinh ra 
+    //   callback hell khiến cho code khó nhìn , rối rắng, từ phiên bản ES6
+    //   sinh ra promise để khắc phục tình trạng này.
+
+
+
+
+
+    //  */ 
+
+      function sleep(ms){
+          return new Promise(function(resole){
+                setTimeout(resole,ms);
+          })
+      }
+      sleep(1000)
+        .then(function(){
+             console.log(1);
+             return sleep(1000);
+        })
+        .then(function(){
+             console.log(2);
+             return sleep(1000);
+        })
+        .then(function(){
+             console.log(3);
+             return sleep(1000);
+        })
+
+ </script>
+</body>
+</html>

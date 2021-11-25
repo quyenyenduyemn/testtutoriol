@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    padding-left: 20p;
+}
+
+i#back-top {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#back-top button.btn {
+    bottom: 5%;
+    position: absolute;
+    z-index: 13;
+    right: 2%;
+    position: fixed;
+    border-radius: 50%;
+}
+
+.sub-menu-responsive div {
+    border-bottom: 1px solid #454141;
+    padding: 5px;
+}
+.sub-menu-responsive {
+    display: none;
+    background: #645959;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+#main-menu-responsive ul {background: #2e2e36;padding: 0px;margin-bottom: 30px;}
+
+#main-menu-responsive li {
+    list-style: none;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #606066;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+nav#main-menu-responsive {
+    position: relative;
+    top: 50px;
+    left: -52px;
+    padding-bottom: 20px;
+    display: none;
+    width: 100%;
+}
+#main-menu-responsive li:hover>a{
+    color:orangered;
+}
+/* Lưu ý nhé  */
+#main-menu-responsive li:hover i{
+    color:orangered;
+}
+i#back-top-responsive {
+    right: 2%;
+    color: #c2c2c4;
+    position: absolute;
+}
+
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#main-menu div {
+    padding-right: 10px;
+}
+
+/* #main-menu {
+    width: 880px;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#main-menu div {width: 110px;text-align: center;} */
+
+.product-detail div {
+    position: absolute;
+    z-index: 11;
+    top: 56px;
+    margin-left: 58px;
+}
+
+.sub-menu.bg-secondary {
+    text-align: left;
+    top: 163%;
+    padding-left: 15px;
+}
+
+/* #sub-menu li {
+    width: 300%;
+    padding: 5px;
+} */
+span.number {
+    background: orangered;
+    position: absolute;
+    border-radius: 100%;
+    text-align: center;
+    top: -100%;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    right: -100%;
+}
+a.cart:hover span.number{
+    color: #ffffff;
+    z-index: 10;
+}
+#search{
+    display: none;
+}
+#search a {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+div#header-bottom-content {
+    padding: 20px;
+}
+
+#header-top-content p{
+    font-size: 14px;
+}
+#header-top-content i{
+    font-size:14px
+} 
+
+p.text-muted {
+    padding-left: 10px;
+}
+
+.evaluate {
+    display: flex;
+}
+
+div#new-product {
+    margin-top: 80px;
+    padding: 15px;
+}
+#main-menu{
+    display: none;
+}
+#main-menu a {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+a.d-block {
+    margin: 0px;
+}
+
+a#product-detail {
+    position: relative;
+}
+
+div#policy {
+    padding: 65px;
+    border-bottom:2px solid #eeeeee ;
+}
+#main-menu-responsive li #back-top-responsive.open{
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+#main-menu-responsive li.active>a{
+    color: orangered;
+}
+#main-menu-responsive li.active i{
+    color: orangered;
+}
+i.fas.fa-shield-alt {
+    display: block;
+}
+
+i.fas.fa-shield-alt {
+    font-size: 48px;
+    color: #7f8c8d;
+}
+#policy a{
+    color: #555353;
+    font-weight: bold;
+}
+#support, #change-product, #free-ship{
+    cursor: pointer;
+}
+#support:hover a{
+    color: orangered;
+    transition: 0.4s;
+}
+#support:hover i{
+    color: orangered;
+    transition: 0.4s;
+}
+#change-product:hover a{
+    color: orangered;
+    transition: 0.4s;
+}
+#change-product:hover i{
+    color: orangered;
+    transition: 0.4s;
+}
+#free-ship:hover a{
+    color: orangered;
+    transition: 0.4s;
+}
+#free-ship:hover i{
+    color: orangered;
+    transition: 0.4s;
+}
+.box-policy {
+    background: whitesmoke;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+i.fas.fa-truck {
+    display: block;
+}
+
+i.fas.fa-truck {
+    font-size: 48px;
+    color: #7f8c8d;
+}
+
+i.fas.fa-headset {
+    display: block;
+}
+
+i.fas.fa-headset {
+    font-size: 48px;
+    color: #7f8c8d;
+}
+i.fas.fa-cart-plus {
+    position: relative;
+}
+
+.search.d-flex {
+    padding-right: 20px;
+}
+
+nav#main-menu {
+    left: 0%;
+}
+#main-menu{
+    position: relative;
+    top: 10%;
+}
+div#header-bottom-content {
+    display: flex;
+    justify-content: space-between;
+}
+div#header-top-content {
+    display: flex;
+    justify-content: space-between;
+}
+div#new-post {
+    margin-top: 160px;
+}
+#post-item p {
+    margin-bottom: 0px;
+}
+div#footer-content {
+    justify-content: space-between;
+}
+#header-top,
+#header-bottom{
+    background-color: #000000;
+}
+#header-top{
+    border-bottom: 1px solid #363636;
+}
+#header-bottom a{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.sub-menu{
+    display: none;
+}
+a.d-block.m-0 {
+    width: 150px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+}
+
+#main-menu-responsive a {left: 20px;position: relative;}
+#header-bottom a:hover{
+    text-decoration: none;
+    color: orangered;
+}
+.img-item{
+    overflow: hidden;
+}
+ #new-product img:hover{
+     cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.4s ease-in-out;
+}
+#hot-product img:hover{
+    cursor: pointer;
+   transform: scale(1.15);
+   transition: 0.4s ease-in-out;
+}
+#owl-carousel img:hover{
+    cursor: pointer;
+   transform: scale(1.15);
+   transition: 0.4s ease-in-out;
+}
+#new-post img:hover{
+    cursor: pointer;
+   transform: scale(1.15);
+   transition: 0.4s ease-in-out;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    margin-top: 45px;
+    padding:0px 10px !important;
+     background: #343434 !important;
+     color:white !important;
+     font-size:20px !important;
+ }
+ .owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover{
+    border: 1px solid #7f8c8d !important; 
+    background: #e2524a !important;
+     transition:all 0.3s;
+ } 
+ #owl-carousel{
+     border-bottom: 2px solid #eeeeee ;
+ }
+  /* .owl-carousel đáng lưu ý khi copy code về nhé  */
+ #post-item{
+     border: 1px solid #eeeeee;
+ }
+ #post-item a.text-uppercase {
+     display: block;
+     padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#footer{
+    padding: 75px;
+    background-color: #212121;
+}
+#footer a {
+    color: #eeeeee;
+    line-height: 2;
+}
+#footer a:hover{
+    text-decoration: none;
+    color: orangered;
+}
+#footer ul li:first-child a{
+    color: #e2524a;
+    font-weight: bold;
+}
+#copy-right{
+    background-color: #e2524a;
+}
+#navbar-toggle button{
+        display: none;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50px;
+        right: 110px;
+        font-size: 20px;
+}
+.main-menu-responsive{
+    position: relative;
+    display: block;
+    left: 20px;
+}
+
+/* #back-top{
+    bottom: 5%;
+    right: 5%;
+    color:#535c68;
+    border: 3px solid gainsboro;
+    font-size:35px;
+    background:whitesmoke;
+    opacity:0.6;
+    cursor:pointer;
+    display: none;
+    border-radius:80%;
+    position: fixed;
+ }
+ #back-top:hover{
+     color: blue;
+     transition: 0.2s;
+    } */
+/* #sub-menu{
+    display: none;
+} */
+

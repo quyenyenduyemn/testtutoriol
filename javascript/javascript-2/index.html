@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-2</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Class marksheet</h1>
+               
+                    <div class="form-group">
+                        <label for="name">Họ và tên</label>
+                        <input type="text" id="name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="math">Điểm Toán</label>
+                        <input type="text" id="math" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="physic">Điểm Lý</label>
+                        <input type="text" id="physic" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="chemistry">Điểm Hóa</label>
+                        <input type="text" id="chemistry" class="form-control">
+                    </div>
+                    <button onclick="nhap()">Nhập</button>
+          
+                <table id="table" style="width:100%; margin-top: 5%;" border="1" cellpadding="1" cellspacing="2">
+                    <tr>
+                        <th class="text-center w-10">STT</th>
+                        <th class="text-center w-30">Họ tên</th>
+                        <th class="text-center w-15">Toán</th>
+                        <th class="text-center w-15">Lý</th>
+                        <th class="text-center w-15">Hóa</th>
+                        <th class="text-center w-15">Trung bình</th>
+                    </tr>
+                </table>
+                <br></br>
+                <div class="text-center">
+                    <button onclick="average()">Tính điểm trung bình</button>
+                    <button onclick="classification()">Xác định học sinh giỏi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

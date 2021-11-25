@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+      /* JSON 
+      1. Là định dạng chuỗi
+      2. Javascript Object Notation
+      3. JSON: Number, Boolean, Null, Array, string trừ function
+      4. Stringify/Parse(từ json sang các dữ liệu khác/ và ngược lại)
+
+       */
+      var json='["javacript","PHP"]';
+      var json='{"name":"dhgu","age":11 }';
+
+      var a='"khfag"';
+      console.log(typeof JSON.stringify(1));
+      console.log(JSON.stringify(
+          {
+              name:"hg",
+              age:12,
+              test:function(){
+                  
+              }
+
+          }
+      ))
+  </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback hell and promise</title>
+</head>
+<body>
+ <script>
+     /* cách tạo ra 1 promise
+     - Truyền function vào promise
+     -bắt buộc phải gọi một trong hai hàm số ở dưới nếu không nó sẽ bị rơi vào tình trạng treo
+
+
+    Đây là 3 trạng thái của promise:
+     1.pendding
+     2.fulfilled
+     3.reject
+      */
+     var promise= new Promise(
+         //Excutor trả lại 2 tham số đều là hàm số
+         
+         function(resole,reject){
+           // Logic xử lý
+           reject([
+               {
+                   id:1,
+                   name:'Javascript'
+               },
+               {
+                   id:2,
+                   name:'PHP'
+               }
+           ])
+     })
+     promise
+      .then(function(number){
+            console.log(number);    
+      })
+      .catch(function(coure){
+             console.log(coure);
+      })
+      .finally(function(){
+          console.log('Done!')
+      })
+
+
+     /* Cách trả lời phỏng vấn
+      Là khái niệm sinh ra để xử lí các thao tác bất đồng bộ ,trước khi
+      có promise thì ta có khái niệm callback mà callback lại sinh ra 
+      callback hell khiến cho code khó nhìn , rối rắng, từ phiên bản ES6
+      sinh ra promise để khắc phục tình trạng này.
+
+
+
+
+
+     */ 
+ </script>
+</body>
+</html>

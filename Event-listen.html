@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listening</title>
+</head>
+
+<body>
+    
+    <button id="btn">
+        event listening
+    </button>
+    <script>
+        var btn = document.getElementById('btn');
+
+
+      //  btn.onclick = function (e) {
+
+            // việc 1
+       //     console.log('việc 1')
+
+            //việc 2
+       //     console.log('việc 2')
+            //việc 3
+     //       alert('hello')
+ //       }
+        /* ở đây onclick là một key của đối tượng btn nên khi nó được gán lại trong một function rỗng thì nó bị 
+       ghi đè lên nên sau 3s thì sự kiện onclick không được hoạt động*/
+       //đây chính 
+     //   setTimeout(function () {
+      //      btn.onclick = function () {
+
+//            }
+  //      },4000)
+
+    // cách lắng nghe xự kiện bằng event listener
+/*    btn.addEventListener('click',function(e){
+         console.log('even 1');
+    });
+    btn.addEventListener('click',function(e){
+         console.log('even 2');
+    });
+    btn.addEventListener('click',function(e){
+         console.log('even 3');
+    });   */
+// cách hủy bỏ lắng nghe
+function viec1(){
+    console.log('viec 1');
+
+}
+function viec2(){
+    console.log('viec 2');
+
+}
+btn.addEventListener('click',viec1);
+btn.addEventListener('click',viec2);
+
+
+setTimeout(function(){
+    btn.removeEventListener('click',viec2);
+},4000);
+    </script>
+</body>
+
+</html>
