@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <a href="https://f8.edu.vn">Học lập trình</a>
+        <br>
+        <a href="https://google.com.vn">Tìm kiếm</a>
+           <div>
+               DIV
+
+               <button>
+                   clink me!
+               </button>
+           </div>
+    </div>
+
+
+    <script>
+        document.querySelector('div').onclick=function(e){
+            console.log('DIV')
+        }
+          
+        document.querySelector('button').onclick=function(e){
+            e.stopPropagation();
+            console.log('click me!')
+        }
+
+
+
+
+
+
+        var linkElements = document.links;
+
+        for (var i = 0; i < linkElements.length; i++) {
+            linkElements[i].onclick = function (e) {
+                //Nếu chuỗi trong thuộc tính href mà khi search trên url 
+                //nó giống hệt chuỗi kia 
+                if (!e.target.href.startsWith("https://f8.edu.vn")) {
+                    //thì nó sẽ ngăn chặn hành vi mặc định tức là không thể chuyển trang được.
+                    e.preventDefault();
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
